@@ -19,7 +19,6 @@ TODO:
 
 # IMPORTS
 import os
-
 # Third party imports
 from PIL import Image  # pip install Pillow
 
@@ -68,5 +67,9 @@ def convert_img_to_svg():
 def testing():
     convert_img_to_black_and_white(r"Resources\test_image_beans.png", r"Resources\converted_beans.png")
 
+def svg_to_gcode():
+    print(open('Resources/sample_code_icon.svg', 'r', encoding='utf-8').read())
 
-testing()
+
+
+svg_to_gcode()
